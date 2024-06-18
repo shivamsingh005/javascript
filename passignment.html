@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passignment</title>
+    <style>
+      #quali {
+        width: 175px;
+        color: grey;
+      }
+      table {
+        border: 1px solid grey;
+      }
+      th {
+        border: 1px solid grey;
+        padding: 5px;
+      }
+      td {
+        border: 1px solid grey;
+        padding: 5px;
+      }
+      span {
+        color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student form</h1>
+    <form action="#" id="form1">
+      <input type="hidden" id="id" />
+      <input type="text" id="fname" placeholder="First Name" />
+      <input type="text" id="lname" placeholder="Last Name" /><br />
+      <span id="fname1"></span>
+      <span id="lname1"></span><br />
+      <input type="text" id="dob" placeholder="Date of Birth" />
+      <select name="quali" id="quali">
+        <option value="">Qualification</option>
+        <option value="10th">10th</option>
+        <option value="12th">12th</option>
+        <option value="UG">UG</option>
+        <option value="PG">PG</option></select
+      ><br />
+      <span id="dob1"></span>
+      <span id="quali1"></span><br />
+      <div id="hobSet" style="margin-bottom: 10px">
+        <input
+          type="text"
+          id="hob"
+          placeholder="Hobbies"
+          class="hobbietextbox"
+        />
+        <button type="submit" id="hobbtn" onclick="return hobButton()">+</button
+        ><br />
+      </div>
+      <p id="errormessage" style="color: red"></p>
+
+      <input type="text" id="email" placeholder="Email" /><br />
+
+      <span id="email1"></span><br />
+      <input type="text" id="phone" placeholder="Phone Number" />
+      <span id="phone1"></span><br /><br />
+      <button type="button" onclick="return onClickSubmit()">Submit</button>
+    </form>
+    <br /><br />
+    <table id="table1">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Date of Birth</th>
+        <th>Qualification</th>
+        <th>Hobbies</th>
+        <th>Email</th>
+        <th>Contact Number</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+      <tbody id="tabdata"></tbody>
+    </table>
+    <script src="script1.js"></script>
+  </body>
+</html>
